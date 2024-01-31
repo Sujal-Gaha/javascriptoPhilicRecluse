@@ -1,0 +1,29 @@
+<!-- Write a program to input any 3 number and find the greater number among them. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const num1 = prompt("Enter the first number:");
+      const num2 = prompt("Enter the second number:");
+      const num3 = prompt("Enter the third number:");
+
+      if (num1 > num2 && num1 > num3) {
+        document.write(num1 + " is the greatest number");
+      } else if (num2 > num1 && num2 > num3) {
+        document.write(num2 + " is the greatest number");
+      } else if (num3 > num1 && num3 > num2) {
+        document.write(num3 + " is the greatest number");
+      } else {
+        document.write("Invalid Entry!");
+      }
+
+      // This is obviously not secure as the user can either enter strings or not enter anything
+      // Will be fixed later
+    </script>
+  </body>
+</html>

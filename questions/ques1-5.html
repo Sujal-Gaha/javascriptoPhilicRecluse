@@ -1,0 +1,53 @@
+<!-- 
+    WAP to input marks in five subject. Then calculate the percentage and determine the division. Use these conditions,
+
+    Percentage greater than or equal to 80 
+    --- distinction
+
+    Percentage between 60 and 79
+    --- first division
+
+    Percentage between 45 and 59
+    --- second division
+
+    Percentage between 32 and 44
+    --- third division
+
+    Percentage less than or equal to 31
+    --- fail
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const mark1 = parseInt(prompt("Enter the marks of first subject:"));
+      const mark2 = parseInt(prompt("Enter the marks of second subject:"));
+      const mark3 = parseInt(prompt("Enter the marks of third subject:"));
+      const mark4 = parseInt(prompt("Enter the marks of fourth subject:"));
+      const mark5 = parseInt(prompt("Enter the marks of fifth subject:"));
+
+      const total = mark1 + mark2 + mark3 + mark4 + mark5;
+      const percentage = total / 5;
+
+      if (percentage >= 80) {
+        document.write("Distinction");
+      } else if (percentage >= 60 && percentage < 79) {
+        document.write("First Division");
+      } else if (percentage >= 45 && percentage < 59) {
+        document.write("Second Division");
+      } else if (percentage >= 32 && percentage < 44) {
+        document.write("Third Division");
+      } else if (percentage <= 31) {
+        document.write("Fail");
+      } else {
+        document.write("Invalid Entry!");
+      }
+    </script>
+  </body>
+</html>

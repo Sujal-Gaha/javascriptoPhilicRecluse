@@ -1,0 +1,38 @@
+<!-- WAP that asks two operands and an operator among +, -, * and /. Depending upon entered operator, evaluate two operands and display the result. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const operand1 = parseInt(prompt("Enter the first number"));
+      const operator = prompt("Enter the operator");
+      const operand2 = parseInt(prompt("Enter the second number"));
+      let result;
+
+      switch (operator) {
+        case "+":
+          result = operand1 + operand2;
+          document.write("The sum is ", result);
+          break;
+        case "-":
+          result = operand1 - operand2;
+          document.write("The difference is ", result);
+          break;
+        case "*":
+          result = operand1 * operand2;
+          document.write("The product is ", result);
+          break;
+        case "/":
+          result = operand1 / operand2;
+          document.write("The quotient is ", result);
+          break;
+        default:
+          document.write("Invalid Entry!");
+      }
+    </script>
+  </body>
+</html>

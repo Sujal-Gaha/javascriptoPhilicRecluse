@@ -1,0 +1,27 @@
+<!-- WAP to compute the sum of digits of a given integer number. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = parseInt(prompt("Enter any integer"));
+
+      let a;
+      let b;
+      let sum = 0;
+
+      do {
+        a = num / 10;
+        b = Math.floor(num % 10);
+        num = a;
+        sum += b;
+      } while (a !== 0);
+
+      document.write("The sum of digits is ", sum);
+    </script>
+  </body>
+</html>

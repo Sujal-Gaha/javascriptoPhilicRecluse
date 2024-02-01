@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <p id="para1">Hello World!</p>
+    <script>
+      const colors = [
+        "red",
+        "orange",
+        "blue",
+        "green",
+        "yellow",
+        "pink",
+        "violet",
+        "purple",
+        "indigo",
+        "black",
+      ];
+
+      const para1Element = document.querySelector("#para1");
+
+      para1Element.style.color = "blue";
+      para1Element.style.fontSize = "100px";
+
+      let randomColor = colors[Math.floor(Math.random() * colors.length)];
+      console.log("Random Color is " + randomColor);
+      para1Element.style.backgroundColor = randomColor;
+    </script>
+  </body>
+</html>

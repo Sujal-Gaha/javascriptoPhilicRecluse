@@ -1,0 +1,29 @@
+<!--  WAP to generate the following Fibonacci series using recursive method:          [0, 1, 1, 2, 3, 5, 8, 13, 21, 34............nth term]  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function fibonacciSeries(n) {
+        if (n == 1) {
+          return 0;
+        } else if (n == 2) {
+          return 1;
+        } else {
+          return fibonacciSeries(n - 1) + fibonacciSeries(n - 2);
+        }
+      }
+
+      const terms = parseInt(prompt("Enter the number of terms:"));
+
+      document.write("The Fibonacci series is: ");
+      for (let i = 1; i <= terms; i++) {
+        document.write(fibonacciSeries(i) + " ");
+      }
+    </script>
+  </body>
+</html>

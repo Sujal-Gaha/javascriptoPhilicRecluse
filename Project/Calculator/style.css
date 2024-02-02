@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-gap: 2px;
+    grid-gap: 4px;
 }
 
 .display {
@@ -20,9 +20,13 @@
 }
 
 button {
-    background-color: whitesmoke;
+    background-color: hsl(0, 0%, 76%);
     cursor: pointer;
     font-size: 20px;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 80%);
 }
 
 .bold {

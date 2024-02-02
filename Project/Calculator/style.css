@@ -15,8 +15,7 @@
 
 .display {
     grid-column: 1 / 5;
-    background-color: whitesmoke;
-    place-items: center;
+    background-color: hsl(0, 0%, 56%);
 }
 
 button {

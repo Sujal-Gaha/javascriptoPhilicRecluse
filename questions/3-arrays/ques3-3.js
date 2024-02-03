@@ -1,5 +1,5 @@
 /**
- * Write a program to sort numbers in ascending order
+ *  Write a program to sort numbers in ascending order
  */
 
 

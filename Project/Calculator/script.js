@@ -1,3 +1,5 @@
+//!                 UNDER CONSTRUCTION
+
 const displayArea = document.querySelector(".display");
 displayArea.innerText = "";
 
@@ -8,6 +10,7 @@ allButtons.forEach((button) => {
         let btnValue = button.innerText;
         if (btnValue === "=") {
             console.log("Working");
+            calculate(displayArea.value);
         }
         else if (btnValue === "C") {
             displayArea.innerText = "";
@@ -19,4 +22,10 @@ allButtons.forEach((button) => {
 
 function updateDisplay(value) {
     displayArea.innerText += value;
+}
+
+function calculate(expression) {
+    displayArea.innerText = "";
+    console.log(expression);
+    return new Function('return ' + expression)();
 }

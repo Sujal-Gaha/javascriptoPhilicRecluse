@@ -11,11 +11,19 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 4px;
+    border: 4px black solid;
+}
+
+.displayer {
+    background-color: hsl(0, 0%, 56%);
+    grid-column: 1 / 5;
 }
 
 .display {
-    grid-column: 1 / 5;
-    background-color: hsl(0, 0%, 56%);
+    font-size: 45px;
+    margin: 20px;
+    background-color: whitesmoke;
+    text-align: start;
 }
 
 button {

@@ -9,16 +9,9 @@ Input: 123456789 Output: 987654321
  */
 
 function descendingOrder(n) {
-  let digits = String(n).split("");
-
-  let sortedDigits = digits.sort((a, b) => {
-    return b - a;
-  });
-
-  let result = parseInt(sortedDigits.join(""));
-  return result;
+  return parseInt(String(n).split("").sort().reverse().join(""));
 }
 
-descendingOrder(4215);
-descendingOrder(145263);
-descendingOrder(123456789);
+console.log(descendingOrder(4215));
+console.log(descendingOrder(145263));
+console.log(descendingOrder(123456789));

@@ -1,9 +1,5 @@
-/** Square(n) Sum */
+/** Remove First and Last Character */
 
-function squareSum(numbers) {
-  let sum = 0;
-  for (i = 0; i < numbers.length; i++) {
-    sum += Math.pow(numbers[i], 2);
-  }
-  return sum;
+function removeChar(str) {
+  return str.slice(1, -1);
 }

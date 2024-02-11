@@ -1,17 +1,9 @@
-/**Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
-Examples:
+/** Square(n) Sum */
 
-Input: 42145 Output: 54421
-
-Input: 145263 Output: 654321
-
-Input: 123456789 Output: 987654321
- */
-
-function descendingOrder(n) {
-  return parseInt(String(n).split("").sort().reverse().join(""));
+function squareSum(numbers) {
+  let sum = 0;
+  for (i = 0; i < numbers.length; i++) {
+    sum += Math.pow(numbers[i], 2);
+  }
+  return sum;
 }
-
-console.log(descendingOrder(4215));
-console.log(descendingOrder(145263));
-console.log(descendingOrder(123456789));

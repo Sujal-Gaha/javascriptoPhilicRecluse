@@ -1,5 +1,9 @@
-/** Remove First and Last Character */
+/** Opposite number */
 
-function removeChar(str) {
-  return str.slice(1, -1);
+function opposite(number) {
+  return -number;
+}
+
+function opposite(number) {
+  return number < 0 ? Math.abs(number) : -Math.abs(number);
 }

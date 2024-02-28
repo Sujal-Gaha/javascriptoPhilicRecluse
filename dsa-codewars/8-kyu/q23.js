@@ -31,3 +31,6 @@ var max = function (list) {
   }
   return maximum;
 };
+
+const min = (list) => Math.min(...list);
+const max = (list) => Math.max(...list);
